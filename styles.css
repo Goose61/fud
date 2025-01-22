@@ -134,44 +134,35 @@ nav {
 
 /* Hero Section */
 .hero {
-    padding-top: 80px;
     position: relative;
     background: #000;
-    overflow: hidden;
     height: 100vh;
     display: flex;
     align-items: center;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
-    z-index: 1;
+    justify-content: center;
+    padding-top: 80px;
 }
 
 .hero-banner {
+    max-height: 90vh;
+    width: auto;
+    max-width: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: white;
     padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin: 0 1rem;
+    max-width: 800px;
 }
 
 .hero h1 {
@@ -427,8 +418,8 @@ footer {
 }
 
 .footer-logo {
-    height: auto;
-    width: 60px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
