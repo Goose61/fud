@@ -136,25 +136,20 @@ nav {
 .hero {
     position: relative;
     background: #000;
-    min-height: 100vh;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
-    overflow: hidden;
 }
 
 .hero-banner {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    max-width: none;
-    object-fit: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 .hero-content {
@@ -347,28 +342,22 @@ h2 {
     color: white;
     position: relative;
     overflow: hidden;
+    padding: 4rem 0;
 }
 
-.join-community::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="rgba(255,255,255,0.1)"/></svg>');
-    opacity: 0.1;
-}
-
-.join-community h2,
-.join-community .section-subtitle {
+.join-community h2 {
     color: white;
     position: relative;
     z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-fill-color: white;
+    background: none;
 }
 
 .join-community .section-subtitle {
+    color: white;
     opacity: 0.9;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .social-buttons {
